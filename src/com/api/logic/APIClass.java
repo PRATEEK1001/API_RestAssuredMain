@@ -51,5 +51,38 @@ public class APIClass {
 		System.out.println(API_response.asString());
 		return API_response;
 	}
+	
+	
+	public static Response apiPATCHMethod(String URI, String header_content_type,
+			String request_body) throws Exception {
+		
+		Response API_response = RestAssured.given()
+				.header("content-type", header_content_type)
+				.body(request_body).patch(URI);
+
+		if (API_response.getStatusCode() == 200 || API_response.getStatusCode() == 201) {
+			System.out.println(("ResponseCode for API is " + API_response.getStatusCode()));
+		} else {
+			throw new Exception("ResponseCode for API is " + API_response.getStatusCode());
+		}		
+		System.out.println(API_response.asString());
+		return API_response;
+	}
+	
+	public static Response apiPUTMethod(String URI, String header_content_type,
+			String request_body) throws Exception {
+		
+		Response API_response = RestAssured.given()
+				.header("content-type", header_content_type)
+				.body(request_body).patch(URI);
+
+		if (API_response.getStatusCode() == 200 || API_response.getStatusCode() == 201) {
+			System.out.println(("ResponseCode for API is " + API_response.getStatusCode()));
+		} else {
+			throw new Exception("ResponseCode for API is " + API_response.getStatusCode());
+		}		
+		System.out.println(API_response.asString());
+		return API_response;
+	}
 
 }

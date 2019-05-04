@@ -14,13 +14,35 @@ public class APITest {
 	 * JsonPath.read(apiResponse.asString(), "$.page"); System.out.println(value); }
 	 */
 	
-	  @Test public void Post() throws Exception {
+	/*
+	 * @Test public void Post() throws Exception {
+	 * 
+	 * System.out.println("---------------------------------------------------");
+	 * String requestBody ="{\"name\":\"morpheus\",\"job\":\"leader\"}"; Response
+	 * apiResponse =
+	 * APIClass.apiPOSTMethod("https://reqres.in/api/users","application/json",
+	 * requestBody); String value = JsonPath.read(apiResponse.asString(), "$.name");
+	 * System.out.println(value); }
+	 */
 	  
-	  System.out.println("---------------------------------------------------");
-	  String requestBody ="{\"name\":\"morpheus\",\"job\":\"leader\"}"; 
-	  Response apiResponse = APIClass.apiPOSTMethod("https://reqres.in/api/users","application/json",requestBody); 
-	  String value = JsonPath.read(apiResponse.asString(), "$.name");
-	  System.out.println(value); }
 	 
-  
+/*	@Test 
+			 * public void Patch() throws Exception {
+			 * 
+			 * System.out.println("---------------------------------------------------");
+			 * String requestBody ="{\"name\":\"morpheus\",\"job\":\"zion resident\"}";
+			 * Response apiResponse =
+			 * APIClass.apiPATCHMethod("https://reqres.in/api/users/2","application/json",
+			 * requestBody); String value = JsonPath.read(apiResponse.asString(), "$.job");
+			 * System.out.println(value); }
+			 
+  */
+	  
+	  @Test public void Put() throws Exception {
+		  
+	  System.out.println("---------------------------------------------------");
+	  String requestBody ="{\"name\":\"morpheus\",\"job\":\"zion resident\"}"; 
+	  Response apiResponse = APIClass.apiPUTMethod("https://reqres.in/api/users/2","application/json",requestBody); 
+	  String value = JsonPath.read(apiResponse.asString(), "$.job");
+	  System.out.println(value); }
 }

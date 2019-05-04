@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6020" started-at="2019-05-04T09:00:01Z" finished-at="2019-05-04T09:00:07Z">
+  <suite name="Default suite" duration-ms="4585" started-at="2019-05-04T11:43:12Z" finished-at="2019-05-04T11:43:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6020" started-at="2019-05-04T09:00:01Z" finished-at="2019-05-04T09:00:07Z">
+    <test name="Default test" duration-ms="4585" started-at="2019-05-04T11:43:12Z" finished-at="2019-05-04T11:43:17Z">
       <class name="com.api.tests.APITest">
-        <test-method status="PASS" signature="Post()[pri:0, instance:com.api.tests.APITest@cc285f4]" name="Post" duration-ms="5977" started-at="2019-05-04T09:00:01Z" finished-at="2019-05-04T09:00:07Z">
+        <test-method status="PASS" signature="Put()[pri:0, instance:com.api.tests.APITest@cc285f4]" name="Put" duration-ms="4523" started-at="2019-05-04T11:43:12Z" finished-at="2019-05-04T11:43:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Post -->
+        </test-method> <!-- Put -->
       </class> <!-- com.api.tests.APITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
